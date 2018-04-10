@@ -1,0 +1,24 @@
+{
+  "name": "realtime-chartjs-hamoni",
+  "version": "1.0.0",
+  "description": "real-time chart using ChartJS and Hamoni Sync - dev.to/##",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmbanugo/realtime-chartjs-hamoni.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmbanugo/realtime-chartjs-hamoni/issues"
+  },
+  "homepage": "https://github.com/pmbanugo/realtime-chartjs-hamoni#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
