@@ -70,6 +70,7 @@ function getState() {
     .then(statePrimitive => {
       console.log("election state retrieved");
       state = statePrimitive;
+      voteData = statePrimitive.get();
     })
     .catch(console.log);
 }

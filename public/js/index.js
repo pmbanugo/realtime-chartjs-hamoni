@@ -1,17 +1,8 @@
-let hamoni = new Hamoni(
-  "13a54c4a-a6ee-431f-b865-51c73f36c218",
-  "f0e4f758d8f74b2c9b767af1d6c24921"
-);
+let hamoni = new Hamoni("Account_ID", "APP_ID");
 
 hamoni
   .connect()
   .then(response => {
-    // -- Set new default font family and font color to mimic Bootstrap's default styling
-    // Chart.defaults.global.defaultFontFamily =
-    //   '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-    // Chart.defaults.global.defaultFontColor = "#292b2c";
-
-    // -- Bar Chart Example
     hamoni
       .get("election")
       .then(statePrimitive => {
@@ -19,9 +10,7 @@ hamoni
 
         renderChart(statePrimitive.get());
 
-        statePrimitive.onUpdated(state => {
-          renderChart(state);
-        });
+        statePrimitive.onUpdated(state => renderChart(state));
       })
       .catch(console.log);
   })
