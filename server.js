@@ -49,8 +49,7 @@ hamoni
   .connect()
   .then(() => {
     console.log("connected to Hamoni sync");
-    // createState();
-    getState();
+    createState();
   })
   .catch(console.log);
 
@@ -61,7 +60,7 @@ function createState() {
       console.log("election state created");
       state = statePrimitive;
     })
-    .catch(console.log);
+    .catch(error => console.log(error) || getState());
 }
 
 function getState() {
