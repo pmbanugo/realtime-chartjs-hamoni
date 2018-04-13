@@ -52,7 +52,7 @@ hamoni
 
 function createState() {
   hamoni
-    .createObject("election2018", voteData)
+    .createObject("election", voteData)
     .then(statePrimitive => {
       console.log("election state created");
       state = statePrimitive;
@@ -62,7 +62,7 @@ function createState() {
 
 function getState() {
   hamoni
-    .get("election2018")
+    .get("election")
     .then(statePrimitive => {
       console.log("election state retrieved");
       state = statePrimitive;
