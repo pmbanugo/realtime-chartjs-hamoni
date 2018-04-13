@@ -1,10 +1,10 @@
-let hamoni = new Hamoni("Account_ID", "APP_ID");
+let hamoni = new Hamoni("ACCOUNT_ID", "APP_ID");
 
 hamoni
   .connect()
   .then(response => {
     hamoni
-      .get("election")
+      .get("election2018")
       .then(statePrimitive => {
         console.log("state retrieved");
 

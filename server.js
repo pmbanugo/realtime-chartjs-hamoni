@@ -10,7 +10,7 @@ let voteData = [
   { candidate: "Peter Mbanugo", vote: 0 },
   { candidate: "Angela Daniels", vote: 0 },
   { candidate: "Rose Philly", vote: 0 },
-  { candidate: "Donald Crump", vote: 0 }
+  { candidate: "James Crump", vote: 0 }
 ];
 
 let statePrimitive;
@@ -40,10 +40,7 @@ app.listen(port, function() {
   console.log(`app listening on port ${port}!`);
 });
 
-let hamoni = new Hamoni(
-  "13a54c4a-a6ee-431f-b865-51c73f36c218",
-  "f0e4f758d8f74b2c9b767af1d6c24921"
-);
+let hamoni = new Hamoni("ACCOUNT_ID", "APP_ID");
 
 hamoni
   .connect()
@@ -55,7 +52,7 @@ hamoni
 
 function createState() {
   hamoni
-    .createObject("election", voteData)
+    .createObject("election2018", voteData)
     .then(statePrimitive => {
       console.log("election state created");
       state = statePrimitive;
@@ -65,7 +62,7 @@ function createState() {
 
 function getState() {
   hamoni
-    .get("election")
+    .get("election2018")
     .then(statePrimitive => {
       console.log("election state retrieved");
       state = statePrimitive;
