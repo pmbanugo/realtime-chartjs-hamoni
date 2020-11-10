@@ -13,3 +13,6 @@ real-time chart using ChartJS and Hamoni Sync - Blogged about on [Dev.to](https:
 5.  Open index.js located in the directory **public/js**. Replace the placeholder for a hamoni account and app ID with your account and app ID copied from your dashboard.
 6.  Start the app - `npm start`
 7.  Open your browser and navigate to [localhost:5000](localhost:5000) to see the chart, and [localhost:5000/vote.html)](localhost:5000/vote.html) to vote.
+
+
+**Accompanying blog post can be read [here](https://dev.to/pmbanugo/real-time-chart-in-javascript-with-chartjs-and-hamoni-sync-1nkb)**
